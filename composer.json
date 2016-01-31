@@ -37,10 +37,41 @@
             "homepage": "http://superdweebie.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kamillo1888/mongodb.git",
+            "packagist": false
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "doctrine/mongodb-odm",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/kamillo1888/mongodb-odm.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+                "name": "mongofill/mongofill",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/kamillo1888/mongofill.git",
+                    "type": "git",
+                    "reference":"master"
+                }
+            }
+        }
+    ],
     "require": {
         "php": ">=5.4",
         "doctrine/doctrine-module": "~1.0",
-        "doctrine/mongodb-odm": "~1.0",
+        "doctrine/mongodb-odm": "dev-master",
         "zendframework/zend-mvc": "2.*",
         "zendframework/zend-servicemanager": "2.*",
         "zendframework/zend-stdlib": "2.*"
