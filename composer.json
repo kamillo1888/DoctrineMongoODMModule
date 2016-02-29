@@ -54,18 +54,6 @@
                     "reference":"master"
                 }
             }
-        },
-        {
-            "type":"package",
-            "package": {
-                "name": "mongofill/mongofill",
-                "version": "dev-master",
-                "source": {
-                    "url": "https://github.com/kamillo1888/mongofill.git",
-                    "type": "git",
-                    "reference":"master"
-                }
-            }
         }
     ],
     "require": {
@@ -74,7 +62,8 @@
         "doctrine/mongodb-odm": "dev-master",
         "zendframework/zend-mvc": "2.*",
         "zendframework/zend-servicemanager": "2.*",
-        "zendframework/zend-stdlib": "2.*"
+        "zendframework/zend-stdlib": "2.*",
+        "alcaeus/mongo-php-adapter": "^1.0.0@beta"
     },
     "require-dev": {
         "zendframework/zendframework": "2.*",
